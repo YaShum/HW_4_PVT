@@ -1,24 +1,3 @@
-/*function asyncMap(arr, mapper) {
-    var q = Promise.resolve();
-    return Promise.all(arr.map(function (v) {
-        return q = q.then(function () {
-            return mapper(v);
-        })
-    }))
-}
-
-asyncMap(['a', 'b', 'c'], function (v) {
-    return new Promise(function (resolve) {
-        console.log("Start " + v);
-        setTimeout( function () {
-            console.log("End " + v);
-            resolve("foo" + v);
-        }, 500);
-    });
-}).then(function (a) {
-    console.log(a);
-});*/
-
 /*function asyncMap(arr, func) {
     var promise = Promise.resolve();
     return Promise.all(arr.map(function (value, index, array) {
