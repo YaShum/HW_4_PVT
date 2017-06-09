@@ -1,3 +1,5 @@
+/*асинхронные действия запускаются параллельно*/
+
 function asyncMap(arr, func) {
     var promise = Promise.resolve();
     return Promise.all(arr.map(function (value, index, array) {
