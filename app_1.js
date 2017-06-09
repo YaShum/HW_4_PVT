@@ -1,3 +1,5 @@
+/*асинхронные действия запускаются последовательно*/
+
 function asyncMap(arr, func) {
     var promise = Promise.resolve();
     var resultArray = [];
