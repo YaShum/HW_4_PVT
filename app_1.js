@@ -21,7 +21,7 @@ asyncMap(['a', 'b', 'c'], function (value, index, array) {
     return new Promise(function (resolve) {      
         setTimeout(function () {
             console.log(value, index, array);
-            resolve("foo" + value, index, array);
+            resolve(value, index, array);
         }, 500);
     });
 });
