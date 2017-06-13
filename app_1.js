@@ -19,10 +19,8 @@ function asyncMap(arr, func) {
 
 asyncMap(['a', 'b', 'c'], function (value, index, array) {
     return new Promise(function (resolve) {      
-        setTimeout(function () {
-            console.log(value, index, array);
+        console.log(value, index, array);
             resolve(value, index, array);
-        }, 500);
     });
 });
 
